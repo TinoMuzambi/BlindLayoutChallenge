@@ -47,17 +47,17 @@ body {
   margin-top: 2rem;
 }
 
-.container .content .side {
+.container .side {
   background: white;
   color: black;
   height: 20vh;
 }
 
-.container .content .side .line {
+.container .side .line {
   border-color: black;
 }
 
-.container .content .side .subtitle {
+.container .side .subtitle {
   text-transform: uppercase;
 }
 /*# sourceMappingURL=style.min.css.map */

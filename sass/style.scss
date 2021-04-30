@@ -44,19 +44,19 @@ body {
 			flex-direction: column;
 			margin-top: 2rem;
 		}
+	}
 
-		.side {
-			background: white;
-			color: black;
-			height: 20vh;
+	.side {
+		background: white;
+		color: black;
+		height: 20vh;
 
-			.line {
-				border-color: black;
-			}
+		.line {
+			border-color: black;
+		}
 
-			.subtitle {
-				text-transform: uppercase;
-			}
+		.subtitle {
+			text-transform: uppercase;
 		}
 	}
 }
