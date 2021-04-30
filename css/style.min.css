@@ -9,7 +9,6 @@ html,
 body {
   margin: 0;
   padding: 0;
-  min-height: 100vh;
   overflow-x: hidden;
   font-family: sans-serif;
   color: white;
@@ -78,7 +77,6 @@ body {
 
 .container .side {
   background: white;
-  z-index: 2;
   color: black;
   height: 30vh;
   width: 100vw;
