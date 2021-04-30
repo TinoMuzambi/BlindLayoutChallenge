@@ -5,7 +5,6 @@
 }
 
 @mixin line {
-	margin: 2rem 0;
 	display: flex;
 	flex-direction: column;
 	gap: 1rem;
@@ -48,7 +47,7 @@ body {
 
 		.title {
 			font-size: 4rem;
-			margin-top: 7rem;
+			margin-bottom: initial;
 
 			@include mq(768px) {
 				font-size: 8rem;
@@ -57,6 +56,7 @@ body {
 
 		.tagline {
 			@include line;
+			margin-top: 4rem;
 
 			.tag {
 				line-height: 1.6;
@@ -76,7 +76,6 @@ body {
 		position: absolute;
 		bottom: 0;
 		@include line;
-		margin: 0;
 		padding: 6rem 3rem;
 
 		@include mq(768px) {
