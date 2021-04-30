@@ -5,6 +5,7 @@
           box-sizing: border-box;
 }
 
+html,
 body {
   margin: 0;
   padding: 0;
@@ -15,23 +16,30 @@ body {
 }
 
 .line {
-  border: 2px solid white;
-  width: 3rem;
+  border-top: 1px solid white;
+  width: 7rem;
 }
 
 .container {
   background: url(../assets/sands.jpg);
   background-size: cover;
   background-position: center;
+  min-height: 100vh;
 }
 
 .container .content {
-  margin: 3rem;
+  padding: 3rem;
 }
 
 .container .content .title {
   font-size: 4rem;
-  margin-top: 2rem;
+  margin-top: 7rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .container .content .title {
+    font-size: 8rem;
+  }
 }
 
 .container .content .tagline {
@@ -52,6 +60,19 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.container .content .tagline .tag {
+  line-height: 1.6;
+}
+
+@media only screen and (min-width: 768px) {
+  .container .content .tagline .tag {
+    font-size: 2rem;
   }
 }
 
@@ -59,8 +80,10 @@ body {
   background: white;
   z-index: 2;
   color: black;
-  height: 20vh;
+  height: 30vh;
   width: 100vw;
+  position: absolute;
+  bottom: 0;
   margin: 2rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -70,7 +93,8 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 1rem;
-  margin: 2rem;
+  margin: 0;
+  padding: 6rem 3rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -79,6 +103,9 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
